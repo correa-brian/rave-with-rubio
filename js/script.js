@@ -14,6 +14,13 @@ $(document).ready(function(){
 			scrollTop:$("#events-section").offset().top
 		}, 1000);
 	});
+
+	$('form').keypress(function (e) {
+  if (e.which == 13) {
+    var userLoc = $('input[name=location]').val();
+    return false;  
+  }
+});
 });
 	
 
