@@ -6,22 +6,36 @@ $(document).ready(function(){
 	$("#about-btn").click(function() {
 		$('html, body').animate({
 			scrollTop:$("#about-section").offset().top
-		}, 1000);
+		}, 800);
 	});
 
 	$("#events-btn").click(function() {
 		$('html, body').animate({
 			scrollTop:$("#events-section").offset().top
-		}, 1000);
+		}, 800);
 	});
 
-	$('form').keypress(function (e) {
-  if (e.which == 13) {
-    var userLoc = $('input[name=location]').val();
-    return false;  
-  }
+	$(function() {
+	states = [
+	'Alabama',
+	'Arkansas',
+	'Colorado',
+	'Georgia', 
+	'Massachusetts',
+	'Minnesota',
+	'Oklahoma',
+	'Tennessee',
+	'Texas',
+	'Vermont',
+	'Virginia',
+	];
+
+	$('#autocomplete').autocomplete({
+		source: states		
+	});	
+  });
 });
-});
+
 	
 
 	
