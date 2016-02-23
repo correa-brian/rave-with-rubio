@@ -16,24 +16,28 @@ $(document).ready(function(){
 	});
 
 	$(function() {
-	states = [
-	'Alabama',
-	'Arkansas',
-	'Colorado',
-	'Georgia', 
-	'Massachusetts',
-	'Minnesota',
-	'Oklahoma',
-	'Tennessee',
-	'Texas',
-	'Vermont',
-	'Virginia',
-	];
-
 	$('#autocomplete').autocomplete({
-		source: states		
-	});	
-  });
+		source: states,
+		focus: function(event, ui) {
+			event.preventDefault();
+			$(this).val(ui.item.label);
+		},
+		select: function(event, ui) {
+			event.preventDefault();
+			var userState = $(this).val(ui.item.label);
+			$('#outputcontent').val(ui.item.value);
+			$('#outputbox').append('<p id="outputcontent-2">' + userState + '</p>');
+		}	
+  	});
+});
+
+/*	
+
+
+	.live("blur", function(event) {
+var get_val = $('ul.ui-autocomplete li:first a').text();
+
+$('#outputbox').append('<p id="liststate">' +  + '</p>');*/
 });
 
 	
