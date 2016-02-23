@@ -24,21 +24,16 @@ $(document).ready(function(){
 		},
 		select: function(event, ui) {
 			event.preventDefault();
-			var userState = $(this).val(ui.item.label);
-			$('#outputcontent').val(ui.item.value);
-			$('#outputbox').append('<p id="outputcontent-2">' + userState + '</p>');
+			$(this).val(ui.item.label);
+			var userState = $('#userSelection').val(ui.item.value);
 		}	
-  	});
+  		});
+
+	})
 });
 
-/*	
 
 
-	.live("blur", function(event) {
-var get_val = $('ul.ui-autocomplete li:first a').text();
-
-$('#outputbox').append('<p id="liststate">' +  + '</p>');*/
-});
 
 	
 

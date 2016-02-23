@@ -121,6 +121,10 @@ html, body {
 	text-align:right; 
 	} 
 
+.displayedevents {
+	display: none;
+}	
+
 @media (max-width: 680px) {
 .header h1 { 
 	margin-bottom: 20px; 
