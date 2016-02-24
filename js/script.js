@@ -18,9 +18,10 @@ $(document).ready(function(){
 	$('#autocomplete').autocomplete ({
     lookup: states,
     onSelect: function (suggestion) {
-        var stateId = suggestion.value;
-        var stateEvent = suggestion.data;
-        $('#output').html(stateId);
+        stateId = suggestion.value;
+        stateEvent = suggestion.data;
+        outputstring = 'Events in ' + suggestion.value + ". There are raves here: " + suggestion.data;
+        $('#output').append(outputstring)
     	}
 	});
 
