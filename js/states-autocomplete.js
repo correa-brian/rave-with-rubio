@@ -1,15 +1,15 @@
 
 var states =
 [
-	{label: "Alabama", value: "#al"},
-	{label: "Arkansas", value: "#ar"},
-	{label: "Colorado", value: "#co"},
-	{label: "Georgia", value: "#ga"},
-	{label: "Massachusetts", value: "#ma"},
-	{label: "Minnesota", value: "#mi"},
-	{label: "Oklahoma", value: "#ok"},
-	{label: "Tennessee", value: "#tn"},
-	{label: "Texas", value: "#tx"},
-	{label: "Vermont", value: "#vt"},
-	{label: "Virginia", value: "#va"},
+	{value: "Alabama", data: "#al"},
+	{value: "Arkansas", data: "#ar"},
+	{value: "Colorado", data: "#co"},
+	{value: "Georgia", data: "#ga"},
+	{value: "Massachusetts", data: "#ma"},
+	{value: "Minnesota", data: "#mi"},
+	{value: "Oklahoma", data: "#ok"},
+	{value: "Tennessee", data: "#tn"},
+	{value: "Texas", data: "#tx"},
+	{value: "Vermont", data: "#vt"},
+	{value: "Virginia", data: "#va"},
 ];
