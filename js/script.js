@@ -15,30 +15,16 @@ $(document).ready(function(){
 		}, 800);
 	});
 
-	/*$(function() {
-		$('#autocomplete').autocomplete({
-			source: states,
-			focus: function(event, ui) {
-			event.preventDefault();
-			$(this).val(ui.item.label);
-			},
-			select: function(event, ui) {
-			event.preventDefault();
-			$(this).val(ui.item.label);
-			$('#userSelection').val(ui.item.value);
-			}	
-  		});
-	});*/
-
 	$('#autocomplete').autocomplete ({
     lookup: states,
     onSelect: function (suggestion) {
-        alert('You selected: ' + suggestion.value + suggestion.data);
+        var stateId = suggestion.value;
+        var stateEvent = suggestion.data;
+        $('#output').html(stateId);
     	}
-		});
-	
-});
+	});
 
+});
 
 
 
