@@ -25,6 +25,11 @@ $(document).ready(function(){
     	}
 	});
 
+	$(function() {
+		$("#datepicker").datepicker();
+		var date = $(this).datepicker('getDate');
+	});
+
 });
 
 
