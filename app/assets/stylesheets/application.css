@@ -20,8 +20,7 @@
 html, body { 
 	margin: 0; 
 	padding: 0; 
-	font-family: 'Arvo', 
-	serif; 
+	font-family: 'Arvo', serif; 
 	font-size: 16px;
 }
 
@@ -58,12 +57,13 @@ html, body {
 }
 
 .jumbotron {
-	background: url(http://www.fultonpostnews.com/images/news/2015/10/1444135202_news_.jpg) no-repeat center center;
+	background: url(http://s1.ibtimes.com/sites/www.ibtimes.com/files/2015/04/10/marco-rubio-water.jpg) no-repeat center center;
 	background-size: cover; 
 	height: 500px;
 	padding-top: 25px;
-	margin-bottom: 0;
+	margin-bottom: 0px;
 }
+
 .jumbotron h2:first-child {
 	margin:120px 0 0;
 }

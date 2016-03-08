@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
   root  'pages#home'
+
+  get '/events' => 'events#events', as: :events
+
+  #get '/locations' => 'pages#locations', as :locations
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

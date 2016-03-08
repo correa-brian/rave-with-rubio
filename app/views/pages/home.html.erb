@@ -38,9 +38,20 @@
            <div class="col-md-4" id="location-input">
             <h4>where will you be?</h4>
               <p>type in your state</p>
-                <form><input type="text" name="location" id="autocomplete"></form>    
+
+    <center><p>Choose Your City:</p>
+        <%= link_to 'New York City', events_path(:city=>"New York,NY"), class: "button" %>
+        <%= link_to 'Miami', events_path(:city=>"Miami,FL"), class: "button" %>
+        <%= link_to 'Cleveland', events_path(:city=>"Cleveland,OH"), class: "button" %>
+        <%= link_to 'Philadelphia', events_path(:city=>"Philadelphia,PA"), class: "button" %>
+        <%= link_to 'Charlotte', events_path(:city=>"Charlotte,NC"), class: "button" %>
+
+    </center>
+
+              <form><input type="text" name="location" id="autocomplete"></form>    
            </div>
          </div>
+
             <div id="outputbox">
               <p>Choose your state and raves will display here.</p>
               <div id="output"></div>
@@ -48,7 +59,6 @@
           </div>
       </div>
     </div>
-
 
   <div class="section" id="calendar">
     <div class="container">
