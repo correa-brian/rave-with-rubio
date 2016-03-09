@@ -40,11 +40,11 @@
               <p>type in your state</p>
 
     <center><p>Choose Your City:</p>
-        <%= link_to 'New York City', events_path(:city=>"New York,NY"), class: "button" %>
-        <%= link_to 'Miami', events_path(:city=>"Miami,FL"), class: "button" %>
-        <%= link_to 'Cleveland', events_path(:city=>"Cleveland,OH"), class: "button" %>
-        <%= link_to 'Philadelphia', events_path(:city=>"Philadelphia,PA"), class: "button" %>
-        <%= link_to 'Charlotte', events_path(:city=>"Charlotte,NC"), class: "button" %>
+        <%= link_to 'New York City', events_path(zip_code: 11111, radius: 50), class: "button" %>
+        <%= link_to 'Miami', events_path(:city=>"Miami, FL"), class: "button" %>
+        <%= link_to 'Cleveland', events_path(:city=>"Cleveland, OH"), class: "button" %>
+        <%= link_to 'Philadelphia', events_path(:city=>"Philadelphia, PA"), class: "button" %>
+        <%= link_to 'Charlotte', events_path(:city=>"Charlotte, NC"), class: "button" %>
 
     </center>
 
