@@ -2,111 +2,104 @@
 
 <html>
   <head>
-<meta name="viewport" content="width=device-width,minimum-scale=1">
+<meta name="viewport" content="width=device-width,initial-scale=1">
 
 <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 <link rel="stylesheet" type="text/css" href="css/style-autocomplete.css">
-
 <link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet" type="text/css">
-
 
 <!--bootstrap-->
 <!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
 
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
 
 <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
 
 
 <!--jquery-->
-
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
 <link rel="stylesheet" href="jquery/jquery-ui.min.css">
 <script src="jquery/external/jquery/jquery.js"></script>
 <script src="jquery/jquery-ui.min.js"></script>
-<script src="jquery/jquery.autocomplete.js"></script>
+<script type="text/javascript" src="jquery/jquery.autocomplete.js"></script>
+
 
 <!--custom-->
-
 <script src="js/script.js"></script>
 <script src="js/states-autocomplete.js"></script>
+<script src="js/events.js"></script>
+
   </head>
  
   <body>
 
     <div class="header">
       <div class="container">
-         <div class="row">
-           <div class="col-md-4"> <h1>rave with rubio</h1></div>
-           <ul class="nav nav-pills nav-stacked">
-              <li id="menu-btn"> <a href="#">menu</a></li>
-            </ul>
-              <div id="menu">
-              <ul class="nav nav-pills nav-stacked">
-                <li id="home-btn"><a href="#">home</a></li>
-                <li id="about-btn"><a href="#">about</a></li>
-                <li id="events-btn"><a href="#">events</a></li>
-              </ul>
-            </div>
-           </div>
+          <h1>rave with rubio</h1>
+           <ul class="nav">
+              
+              <li> <a href="#" id="menu-btn">Menu</a></li>
+              
+              <div id="menu" >
+                <li> <a href="#" class="menu-btn" id="btn-events">Events</a> </li>
+                <li> <a href="#" class="menu-btn" id="btn-about">About</a> </li>
+              </div>
+
+          </ul>
+
          </div>
-      </div>    
+      </div>   
+ 
     
       <div class="jumbotron">
         <div class="container">
-          <div class="row">
-            <div class="col-md-4"> <h2>rubio</h2> <h2>and</h2> <h2>raves.</h2> </div>
-          </div>   
+            <div class="jumbo-text">
+             <h2>rubio</h2> <h2>and</h2> <h2>raves.</h2> </div>  
         </div>
       </div>
 
-    <div class="section banner" id="about-section">
-      <div class="container"> 
-        <h3>Find the nearest rave along Rubio's campaign trail.</h3>
-      </div>
-    </div>
-            
-    <div class="section" id="events-section">
-      <div class="container">
-        <div class="page-header"> <h3>super tuesday</h3></div>
-          <div class="row">
-            <div id="searchfield">
-           <div class="col-md-4" id="location-input">
-            <h4>where will you be?</h4>
-              <p>type in your state</p>
-                <form><input type="text" name="location" id="autocomplete"></form>    
-           </div>
-         </div>
-            <div id="outputbox">
-              <p>Choose your state and raves will display here.</p>
-              <div id="output"></div>
+   <div class="sections">   
+   <div class="container">  
+    <div class="col"> 
+
+      <div class="col-events" id="section-events">
+         <h2>Find Events</h2>
+          <h3>Find events near you on your state's primary election day.</h3>
+          
+
+            <div class="col-events-search"  id="searchfield">
+              <div id="location-input">
+                <h4>Where will you be?</h4>
+                  <p>Type in your zipcode</p>
+                    <form><input type="text" name="location" id="autocomplete"></form>    
+              </div>
             </div>
-          </div>
-      </div>
-    </div>
 
+            <div class="col-events-" id="outputbox">
+              <h4>Events Near You<h4>
+              <div id="location-output"></div>
+            </div>
 
-  <div class="section" id="calendar">
-    <div class="container">
-      <div class="page-header"> <h3>upcoming</h3></div>
-        <div class="row"> 
-          <div class="col-md-4"><h4>find upcoming Rubio events</h4>
-              <p> Date: <input type="text" id="datepicker"></p>
-            <!--</div> 
-              <iframe width="420" height="315"
-                src="https://youtu.be/3AMV0QSiWoc"></iframe>
-          </div>-->
+       </div> 
       </div>
-    </div>
     
+
+    <div class="col">
+      <div class="col-about" id="section-about">
+      <h2>About</h2>
+          <h3>Milkshake Media</h3>    
+          <div class="about-img"></div>   
+      </div>     
+  </div>
+
+</div>
+<div class="clearfix"></div>
+</div>
+
     <div class="footer">
       <div class="container">
-        <p>&copy; 2016 Rave with Rubio</p>
-        <p class="a-center"><a href="#">ravewithrubio.com</a></p>
-        <p class="a-right">NY, NY</p>
+        <p>&copy; Rave with Rubio 2016</p>
       </div>
     </div>
 

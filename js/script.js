@@ -3,15 +3,15 @@ $(document).ready(function(){
 		$("#menu").toggle();
 	});
 
-	$("#about-btn").click(function() {
+	$("#btn-about").click(function() {
 		$('html, body').animate({
-			scrollTop:$("#about-section").offset().top
+			scrollTop:$("#section-about").offset().top
 		}, 800);
 	});
 
-	$("#events-btn").click(function() {
+	$("#btn-events").click(function() {
 		$('html, body').animate({
-			scrollTop:$("#events-section").offset().top
+			scrollTop:$("#section-events").offset().top
 		}, 800);
 	});
 
@@ -23,11 +23,6 @@ $(document).ready(function(){
         outputstring = 'Events in ' + suggestion.value + ". There are raves here: " + suggestion.data;
         $('#output').append(outputstring)
     	}
-	});
-
-	$(function() {
-		$("#datepicker").datepicker();
-		var date = $(this).datepicker('getDate');
 	});
 
 });

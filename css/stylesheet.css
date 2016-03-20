@@ -1,38 +1,31 @@
 html, body { 
 	margin: 0; 
 	padding: 0; 
-	font-family: 'Arvo', 
-	serif; 
-	font-size: 16px;
 }
 
 .container {
 	max-width: 940px;
-	margin: 0 
-	auto;
+	margin: 0 auto;
+	padding: 0 10px;
+	width: 100%;	
 }
-.header {
-	padding: 40px;
-}
+
 .header h1 {
 	margin: 0;
 	padding:0;
 }
 .nav {
-	float:right;
-	width:340;
+	width: 50%;
+	margin-right: 0px;
+	float: right;
 }
 
-.nav-pills li a {
-	color: #d8192f;
-	border: 1px solid #D8192f;
-	margin-left: 10px;
-	text-align: center;
-	width: 100px;
+.menu-btn {
+	background-color:rgba(216,25,47,1); 
+	box-shadow:0 2px 4px rgba(0,0,0,.5); 
+	color:#fff; 
 }
-.nav-pills li.active a:hover {
-	background-color: #d8192f;
-}
+
 
 #menu {
 	display: none;
@@ -40,106 +33,83 @@ html, body {
 
 .jumbotron {
 	background: url(http://www.fultonpostnews.com/images/news/2015/10/1444135202_news_.jpg) no-repeat center center;
-	background-size: cover; 
-	height: 500px;
-	padding-top: 25px;
-	margin-bottom: 0;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
 }
-.jumbotron h2:first-child {
-	margin:120px 0 0;
-}
+
 .jumbotron h2 {
+	margin:120px 0 0;
 	color: #fff;
 	font-size:60px;
 	text-align:bottom;
 	margin:0;
-	width:200%;
+	
 }
 
-.banner {
-	background-color:#36343f;
-	height:180px;
-}
-.section {
-	text-align:center; 
-	padding-top:40px;
+
+.col {
+	float: left;
+	width: 100%;
+	text-align: center;
 }
 
-.section h3 {
+.col-events-sub {
+	width: 50%;
+	position: relative;
+}
+
+
+
+.col-events h2 {
 	margin: 0; 
 	padding: 0 0 20px; 
 	font-size: 30px;
 }
 
-.banner h3 {
+.col-events h3 {
 	margin: 0; 
-	padding: 0; 
-	color:#fff; 
+	padding: 0 0 20px; 
+	font-size: 20px;
 }
-.section h4 {
+
+.col-events h4 {
 	color:#d8192f; 
 	margin: 30px 0 20px; 
 	padding: 0; 
 	font-size: 20px;
 }
-.section .btn {
-	background-color:rgba(216,25,47,.5); 
-	border:0px; 
-	margin-top: 24px; 
-	color: #fff; 
+
+
+.col-about h3 {
+	margin: 0; 
+	padding: 0 0 20px; 
+	font-size: 20px;
 }
 
-.nav-pills li.active a, .section .btn:hover,
-.nav-pills li a:hover {
-	background-color:rgba(216,25,47,1); 
-	box-shadow:0 2px 4px rgba(0,0,0,.5); 
-	color:#fff; 
-}
-.section ul {
-	list-style-type: none; 
-	margin-top: 10px; 
-	padding: 0; 
+.about-img {
+	background: url();
 }
 
+.clearfix {
+  clear: both;
+}
 
 .footer {
-	height:100px; 
-	padding: 40px 0px 100px; 
-	margin-top: 80px; 
-	background-color: #eee; 
-	font-size: 14px; 
+	background-color: #333;
+  	color: #fff;
 }
-.footer p {
-	float:left; 
-	width:33%; 
-}
-.footer a {
-	color: #d8192f; 
-}
-.a-center {
-	text-align:center; 
-}
-.a-right {
-	text-align:right; 
-	} 
+	
 
-.displayedevents {
-	display: none;
-}	
+@media (max-width: 360px) {
 
-@media (max-width: 680px) {
-.header h1 { 
-	margin-bottom: 20px; 
-	text-align: center; 
+.header {
+	width: 100%
 }
-.nav { 
-	float: none; 
-	margin: 0 auto; 
+
+.container {
+	width: 100%;
 }
-.banner { 
-	height: 220px; 
-}
-.nav-pills li:first-child a { 
-	margin-left: 0;
-}
+
 }
