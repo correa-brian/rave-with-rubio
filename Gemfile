@@ -26,6 +26,7 @@ gem 'json'
 
 gem 'jambase', '~> 0.0.1'
 
+gem 'awesome_print'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 

@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   
   root  'pages#home'
 
-  get '/events' => 'events#events', as: :events
+  resources :pages
 
   #get '/locations' => 'pages#locations', as :locations
 

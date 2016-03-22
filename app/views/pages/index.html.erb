@@ -1,0 +1,17 @@
+<div class="locations">
+    
+    <center>
+      <p>Which show are you thinking?</p>
+      <p>The events below are within <b><%= @radius %> miles </b> of your zip code: <b><%= @zip_code %></b></p>
+    
+      <% @info_array.each do |f| %>
+      <ul>
+      	<li> <p> <b>Event Id:</b> <%= f[:id] %> </p> </li>
+        <li> <p> <b>Artist:</b> <%= f[:artists] %> </p> </li>
+        <li> <p> <b>Venue:</b> <%= f[:venue_name] %> </p> </li>
+        <li> <p> <b>Ticket Url:</b> <%= f[:ticket_url] %> </p> </li>
+    </ul>
+      <%end%>
+
+    </center>
+</div>
