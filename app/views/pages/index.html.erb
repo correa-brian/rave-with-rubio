@@ -7,7 +7,7 @@
       <% @info_array.each do |f| %>
       <ul>
       	<li> <p> <b>Event Id:</b> <%= f[:id] %> </p> </li>
-        <li> <p> <b>Artist:</b> <%= f[:artists] %> </p> </li>
+        <li> <p> <b>Artist:</b> <%= f[:artists][0]["Name"] %> </p> </li>
         <li> <p> <b>Venue:</b> <%= f[:venue_name] %> </p> </li>
         <li> <p> <b>Ticket Url:</b> <%= f[:ticket_url] %> </p> </li>
     </ul>

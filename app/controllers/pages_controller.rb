@@ -9,7 +9,7 @@ class PagesController < ApplicationController
 		jambase = Jambase.new
 		@zip_code = params[:zip_code]
 		@radius = params[:radius]
-		shows = jambase.get_events(zip_code: 94587, radius: 50)
+		shows = jambase.get_events(zip_code: 10012, radius: 50)
 		@info_array = [] 
 
 		shows["Events"].each do |element, value|
