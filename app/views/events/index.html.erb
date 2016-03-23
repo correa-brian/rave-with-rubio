@@ -1,0 +1,23 @@
+<header>
+  <div class="container">
+    
+      <h1>Which show are you thinking?</h1>
+  </div>
+</header>
+
+  <div class="main">
+    <div class="container">
+      <h2>The events below are within <b><%= @radius %> miles </b> of your zip code: <b><%= @zip_code %></b></h2>
+    
+      <% @info_array.each do |f| %>
+      <ul>
+      	<li> <p> <b>Event Id:</b> <%= f[:id] %> </p> </li>
+        <li> <p> <b>Date:</b> <%= f[:start_date] %> </p> </li>
+        <li> <p> <b>Artist:</b> <%= f[:artists][0]["Name"] %> </p> </li>
+        <li> <p> <b>Venue:</b> <%= f[:venue_name] %> </p> </li>
+        <li> <p> <b>Ticket Url:</b> <%= f[:ticket_url] %> </p> </li>
+      </ul>
+      <%end%>
+
+    </div>
+  </div>

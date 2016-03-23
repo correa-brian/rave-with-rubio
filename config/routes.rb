@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   root  'pages#home'
 
   resources :pages
+  resources :events
 
   #get '/locations' => 'pages#locations', as :locations
 
