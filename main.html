@@ -32,69 +32,64 @@
 
   </head>
  
-  <body>
+<body>
 
-    <div class="header">
-      <div class="container">
-          <h1>rave with rubio</h1>
-           <ul class="nav">
-              
-              <li> <a href="#" id="menu-btn">Menu</a></li>
-              
-              <div id="menu" >
-                <li> <a href="#" class="menu-btn" id="btn-events">Events</a> </li>
-                <li> <a href="#" class="menu-btn" id="btn-about">About</a> </li>
-              </div>
+  
 
-          </ul>
-
-         </div>
-      </div>   
+<main id="panel">        
+  <div class="header">
+    <div class="container">
+      <h1>Rave with Rubio</h1>
+      <button class="toggle-button" id="btn-menu"><img src="hamburger.png"></button>
+      <nav id="menu">  
+        <ul class="nav nav-pills nav-stacked">
+          <li> <a href="#" class="btn" id="btn-events">Events</a> </li>
+          <li> <a href="#" class="btn" id="btn-about">About</a> </li>
+        </ul>
+      </nav>
+    </div>
+  </div>   
  
-    
-      <div class="jumbotron">
-        <div class="container">
-            <div class="jumbo-text">
-             <h2>rubio</h2> <h2>and</h2> <h2>raves.</h2> </div>  
-        </div>
-      </div>
-
-   <div class="sections">   
-   <div class="container">  
-    <div class="col"> 
-
-      <div class="col-events" id="section-events">
-         <h2>Find Events</h2>
-          <h3>Find events near you on your state's primary election day.</h3>
-          
-
-            <div class="col-events-search"  id="searchfield">
-              <div id="location-input">
-                <h4>Where will you be?</h4>
-                  <p>Type in your zipcode</p>
-                    <form><input type="text" name="location" id="autocomplete"></form>    
-              </div>
-            </div>
-
-            <div class="col-events-" id="outputbox">
-              <h4>Events Near You<h4>
-              <div id="location-output"></div>
-            </div>
-
-       </div> 
-      </div>
-    
-
-    <div class="col">
-      <div class="col-about" id="section-about">
-      <h2>About</h2>
-          <h3>Milkshake Media</h3>    
-          <div class="about-img"></div>   
-      </div>     
+ 
+  <div class="jumbotron">
+    <div class="container">
+      <h2>Elections</h2> <h2>and</h2> <h2>Raves</h2> 
+    </div>
   </div>
 
-</div>
-<div class="clearfix"></div>
+   <div class="sections">   
+    <div class="container">  
+
+      <div class="row"> 
+        <div class="banner" id="section-intro">
+          <h2>Find Events</h2>
+          <h3>Find events near you on your state's primary election day.</h3>
+        </div>  
+      </div>
+
+        <div class="row" id="section-events">
+          <div class="col-sm-6" id="location-input">
+            <h4>Where will you be?</h4>
+              <p>Type in your zipcode</p>
+              <form><input type="text" name="location" id="autocomplete"></form>    
+          </div>
+
+          <div class="col-sm-6" id="location-display">
+            <h4>Events in your area</h4>
+            <div id="output"> </div>
+          </div>  
+        </div>
+
+      <div class="row" id="section-about">
+        <h2>About</h2>
+        <h3>Milkshake Media</h3>   
+        <img class="about-img" src="ms.jpg" height="62" width="60">    
+      </div>
+
+     
+    </div>
+
+  <div class="clearfix"></div>
 </div>
 
     <div class="footer">
@@ -103,5 +98,6 @@
       </div>
     </div>
 
+</main>
   </body>
 </html>

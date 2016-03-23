@@ -1,5 +1,6 @@
 $(document).ready(function(){
-	$("#menu-btn").click(function() {
+
+	$("#btn-menu").click(function() {
 		$("#menu").toggle();
 	});
 
