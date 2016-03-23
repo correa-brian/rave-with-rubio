@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+
+<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+<link rel="stylesheet" type="text/css" href="css/style-autocomplete.css">
+<link href="https://fonts.googleapis.com/css?family=Arvo:400,700" rel="stylesheet" type="text/css">
+
+<!--bootstrap-->
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+
+<!--jquery-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<link rel="stylesheet" href="jquery/jquery-ui.min.css">
+<script src="jquery/external/jquery/jquery.js"></script>
+<script src="jquery/jquery-ui.min.js"></script>
+<script type="text/javascript" src="jquery/jquery.autocomplete.js"></script>
+
+
+<!--custom-->
+<script src="js/script.js"></script>
+<script src="js/states-autocomplete.js"></script>
+<script src="js/events.js"></script>
+
+  </head>
+ 
+<body>
+
+  
+
+<main id="panel">        
+  <div class="header">
+    <div class="container">
+      <h1>Rave with Rubio</h1>
+      <button class="toggle-button" id="btn-menu"><img src="hamburger.png"></button>
+      <nav id="menu">  
+        <ul class="nav nav-pills nav-stacked">
+          <li> <a href="#" class="btn" id="btn-events">Events</a> </li>
+          <li> <a href="#" class="btn" id="btn-about">About</a> </li>
+        </ul>
+      </nav>
+    </div>
+  </div>   
+ 
+ 
+  <div class="jumbotron">
+    <div class="container">
+      <h2>Elections</h2> <h2>and</h2> <h2>Raves</h2> 
+    </div>
+  </div>
+
+   <div class="sections">   
+    <div class="container">  
+
+      <div class="row"> 
+        <div class="banner" id="section-intro">
+          <h2>Find Events</h2>
+          <h3>Find events near you on your state's primary election day.</h3>
+        </div>  
+      </div>
+
+        <div class="row" id="section-events">
+          <div class="col-sm-6" id="location-input">
+            <h4>Where will you be?</h4>
+              <p>Type in your zipcode</p>
+              <form><input type="text" name="location" id="autocomplete"></form>    
+          </div>
+
+          <div class="col-sm-6" id="location-display">
+            <h4>Events in your area</h4>
+            <div id="output"> </div>
+          </div>  
+        </div>
+
+      <div class="row" id="section-about">
+        <h2>About</h2>
+        <h3>Milkshake Media</h3>   
+        <img class="about-img" src="ms.jpg" height="62" width="60">    
+      </div>
+
+     
+    </div>
+
+  <div class="clearfix"></div>
+</div>
+
+    <div class="footer">
+      <div class="container">
+        <p>&copy; Rave with Rubio 2016</p>
+      </div>
+    </div>
+
+</main>
+  </body>
+</html>

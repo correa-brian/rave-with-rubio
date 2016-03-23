@@ -1,0 +1,109 @@
+html, body { 
+	margin: 0; 
+	padding: 0; 
+}
+
+.container {
+	max-width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+	width: 100%;	
+}
+
+.header h1 {
+	margin-bottom: 0; 
+	padding:0 10px;
+}
+
+.nav {
+	margin-right: 0px;
+	float: right;
+}
+
+#menu {
+	display: none;
+}
+
+.btn {
+	color: #333;
+	font-size: 14px;
+	text-decoration: none;
+}
+
+.btn:hover {
+	opacity: 0.4;	
+}
+
+.toggle-button {
+	float: right;
+}
+
+
+.jumbotron {
+	background: url(http://www.fultonpostnews.com/images/news/2015/10/1444135202_news_.jpg) no-repeat center;
+	-webkit-background-size: cover;
+  	-moz-background-size: cover;
+  	-o-background-size: cover;
+  	background-size: cover;
+  	
+}
+
+.jumbotron h2 {
+	margin:120px 0 0;
+	color: #fff;
+	font-size:60px;
+	text-align:bottom;
+	margin:0;
+	
+}
+
+.row {
+	float: left;
+	width: 100%;
+	text-align: center;
+}
+
+.banner h2 {
+	margin: 0; 
+	padding: 0 0 20px; 
+	font-size: 30px;
+}
+
+.banner h3 {
+	margin: 0; 
+	padding: 0 0 20px; 
+	font-size: 20px;
+}
+
+.row h3 {
+	margin: 0; 
+	padding: 0 0 20px; 
+	font-size: 20px;
+}
+
+
+.clearfix {
+  clear: both;
+}
+
+.about-img {
+	float: center;
+}
+
+.footer {
+	background-color: #333;
+  	color: #fff;
+}
+	
+
+@media (max-width: 360px) {
+
+.header {
+	width: 100%
+}
+
+.container {
+	width: 100%;
+}
+
+}
