@@ -1,0 +1,77 @@
+    <div class="header">
+      <div class="container">
+         <div class="row">
+           <div class="col-md-4"> <h1>rave with rubio</h1></div>
+           <ul class="nav nav-pills nav-stacked">
+              <li id="menu-btn"> <a href="#">menu</a></li>
+            </ul>
+              <div id="menu">
+              <ul class="nav nav-pills nav-stacked">
+                <li id="home-btn"><a href="#">home</a></li>
+                <li id="about-btn"><a href="#">about</a></li>
+                <li id="events-btn"><a href="#">events</a></li>
+              </ul>
+            </div>
+           </div>
+         </div>
+      </div>    
+    
+      <div class="jumbotron">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4"> <h2>rubio</h2> <h2>and</h2> <h2>raves.</h2> </div>
+          </div>   
+        </div>
+      </div>
+
+    <div class="section banner" id="about-section">
+      <div class="container"> 
+        <h3>Find the nearest rave along Rubio's campaign trail.</h3>
+      </div>
+    </div>
+            
+    <div class="section" id="events-section">
+      <div class="container">
+        <div class="page-header"> <h3>super tuesday</h3></div>
+          <div class="row">
+            <div id="searchfield">
+           <div class="col-md-4" id="location-input">
+            <h4>where will you be?</h4>
+              <p>type in your state</p>
+
+
+
+              <form><input type="text" name="location" id="autocomplete"></form>    
+           </div>
+
+
+         </div>
+
+              <center><p>Choose Your City:</p>
+                <%= link_to 'New York City', pages_path(zip_code: 10012, radius: 50), class: "button" %>
+              </center>
+
+          </div>
+      </div>
+    </div>
+
+  <div class="section" id="calendar">
+    <div class="container">
+      <div class="page-header"> <h3>upcoming</h3></div>
+        <div class="row"> 
+          <div class="col-md-4"><h4>find upcoming Rubio events</h4>
+              <p> Date: <input type="text" id="datepicker"></p>
+            <!--</div> 
+              <iframe width="420" height="315"
+                src="https://youtu.be/3AMV0QSiWoc"></iframe>
+          </div>-->
+      </div>
+    </div>
+    
+    <div class="footer">
+      <div class="container">
+        <p>&copy; 2016 Rave with Rubio</p>
+        <p class="a-center"><a href="#">ravewithrubio.com</a></p>
+        <p class="a-right">NY, NY</p>
+      </div>
+    </div>
